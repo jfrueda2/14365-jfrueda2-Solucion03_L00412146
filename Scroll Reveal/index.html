@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Marvel</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/guardian.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="assets/img/logo.png" alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#services">Trinidad</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Vengadores</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Guardianes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Spiderman</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading"><br></div>
+                <div class="masthead-heading text-uppercase"><br></div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Avengers Assamble</a>
+            </div>
+        </header>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <style>
+                .rounded-image {
+                    display: inline-block;
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    margin: 0 auto;
+                }
+                .rounded-image img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            </style>
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Trinidad</h2>
+                    <h3 class="section-subheading text-muted">Tres héroes se unen para enfrentar una amenaza mayor.</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <div class="rounded-image">
+                            <img src="ironman.jpg" alt="Iron Man Logo">
+                        </div>
+                        <h4 class="my-3">Iron Man</h4>
+                        <p class="text-muted">Multimillonario ingenioso y tecnológico, Tony Stark se convierte en Iron Man usando una armadura avanzada y salva el universo.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="rounded-image">
+                            <img src="cap.jpg" alt="Capitán América Logo">
+                        </div>
+                        <h4 class="my-3">Capitán América</h4>
+                        <p class="text-muted">Steve Rogers se convierte en un super soldado con fuerza sobrehumana, lleva un escudo indestructible y personifica el heroísmo.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="rounded-image">
+                            <img src="thor.jpeg" alt="Thor Odinson Logo">
+                        </div>
+                        <h4 class="my-3">Thor Odinson</h4>
+                        <p class="text-muted">Dios nórdico del trueno, hijo de Odin, posee fuerza y controla un martillo Mjolnir y una hacha Stormbreaker.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <style>
+                .portfolio-item {
+                    position: relative;
+                    overflow: hidden;
+                }
+                .portfolio-link {
+                    display: block;
+                }
+                .portfolio-hover {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.7);
+                    opacity: 0;
+                    transition: opacity 0.2s;
+                }
+                .portfolio-item:hover .portfolio-hover {
+                    opacity: 1;
+                }
+                .portfolio-hover-content {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: #fff;
+                }
+                .portfolio-caption {
+                    padding: 1rem;
+                    text-align: center;
+                }
+                .portfolio-caption-heading {
+                    font-size: 1.25rem;
+                    font-weight: bold;
+                }
+                .portfolio-caption-subheading {
+                    font-size: 1rem;
+                    font-style: italic;
+                }
+                .portfolio-item img {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
+            </style>
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Vengadores</h2>
+                    <h3 class="section-subheading text-muted">Conoce a quiénes formaron parte del equipo vengador.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/hulk.webp" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Hulk</div>
+                                <div class="portfolio-caption-subheading text-muted">Estudio en Energía Gamma</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/hawkeye.webp" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Hawkeye</div>
+                                <div class="portfolio-caption-subheading text-muted">Agente de S.H.I.E.L.D.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/blackwidow.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Black Widow</div>
+                                <div class="portfolio-caption-subheading text-muted">Espía de S.H.I.E.L.D.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/rocket.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Rocket Racoon</div>
+                                <div class="portfolio-caption-subheading text-muted">Guardián de la Galaxia</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/antman.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Ant-Man</div>
+                                <div class="portfolio-caption-subheading text-muted">Exconvicto Resignado</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/blackpanther.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Black Panther</div>
+                                <div class="portfolio-caption-subheading text-muted">Rey de Wakanda</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Guardianes</h2>
+                    <h3 class="section-subheading text-muted">Conoce la trayectoria de nuestros Guardianes de la Galaxia.</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image">
+                             <img class="rounded-circle img-fluid" src="assets/img/about/gog1.jpg" alt="..." style="width: 100%; height: 100%; object-fit: cover;" />
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2014</h4>
+                                    <h4 class="subheading">Vol. 1</h4>
+                                </div>
+                            <div class="timeline-body"><p class="text-muted">Un grupo de inadaptados intergalácticos se une de manera improbable. El líder del grupo, Peter Quill o Star-Lord, reúne a Gamora, Drax el Destructor, Rocket Raccoon y Groot en una aventura llena de humor, acción y música.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="rounded-circle img-fluid" src="assets/img/about/gog2.jpg" alt="..." style="width: 100%; height: 100%; object-fit: cover;" />
+                           </div>
+                           <div class="timeline-panel">
+                               <div class="timeline-heading">
+                                   <h4>2017</h4>
+                                   <h4 class="subheading">Vol. 2</h4>
+                               </div>
+                           <div class="timeline-body"><p class="text-muted">Intentan descubrir la verdadera identidad del padre de Peter Quill. A medida que enfrentan amenazas cósmicas y se enfrentan a sus propias dinámicas internas, descubren el significado de la familia en formas inesperadas.</p></div>
+                       </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/gognavidad.jpeg" alt="..." style="width: 100%; height: 100%; object-fit: cover;"  /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2022</h4>
+                                <h4 class="subheading">Especial de Navidad</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Mantis y Drax llegan a la Tierra en busca de un regalo especial para Peter. El especial promete capturar la esencia del humor y la aventura de los Guardianes mientras celebran la Navidad en su estilo único y cómico.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/gog3.jpeg" alt="..."  style="width: 100%; height: 100%; object-fit: cover;" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2023</h4>
+                                <h4 class="subheading">Vol. 3</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Rocket a punto de morir se encuentra en una disputa con su pasado, que lo enfrenta nuevamente con el Alto Evolucionador. Los guardianes luchan por la vida de sus amigos, propia y de toda la galaxia.</p></div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">You Are Amazing!</h2>
+                    <h3 class="section-subheading text-muted">"Un gran poder conlleva una gran responsabilidad"</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/tobey.jpg" alt="..."  />
+                            <h4>Spider Man</h4>
+                            <p class="text-muted">Tobey Maguire</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/TobeyMaguire" target="_blank aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://youtu.be/WtsTNLpsLbs?si=oUVHXiatOzn3CMvk" target="_blank aria-label="Parveen Anand Facebook Profile"><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/tobey.__.maguire/?hl=es-la" target="_blank aria-label="Parveen Anand Instagram Profile"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/andrew.jpg" alt="..." />
+                            <h4>Spider Man</h4>
+                            <p class="text-muted">Andrew Garfield</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/bestofgarfieId" target="_blank aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://youtu.be/sSoM_u8ljss?si=fVh5y0EUW0QthFBW" target="_blank aria-label="Diana Petersen Facebook Profile"><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/andrewgarfieldoffecialy/?hl=es-la" target="_blank aria-label="Diana Petersen Instagram Profile"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/tom.jpg" alt="..." />
+                            <h4>Spider Man</h4>
+                            <p class="text-muted">Tom Holland</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/TomHolland1996" target="_blank aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://youtu.be/_gtZZHD3vEk?si=q3AMTbETdh1HDn2r" target="_blank aria-label="Larry Parker Facebook Profile"><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/tomholland2013/?hl=es-la" target="_blank aria-label="Larry Parker Instagram Profile"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">El Multiverso está cada vez más roto y un hechizo puede traer a varios villanos, pero también a más variantes de un héroe de vecindario.</p></div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Marvel &copy; 2023</div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Hulk</h2>
+                                    <p class="item-intro text-muted">Bruce Banner</p>
+                                    <video class="img-fluid d-block mx-auto" controls>
+                                        <source src="Hulk.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <br>
+                                    <p>Hulk, también conocido como Bruce Banner, es un científico brillante que se transforma en un monstruo verde de inmensa fuerza cuando se enoja. La transformación es el resultado de una exposición a radiación gamma. Hulk lucha por controlar su furia y a menudo se ve atrapado entre su personalidad pacífica como Banner y su poder destructivo como Hulk. Es uno de los héroes más poderosos del Universo Marvel y es conocido por su capacidad para derrotar a enemigos formidables.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Poderes:</strong>
+                                            Hulk es un ser humanoide con una fuerza sobrehumana descomunal. Su fuerza aumenta cuanto más enojado se vuelve, lo que lo convierte en uno de los seres más poderosos del Universo Marvel.
+                                        </li>
+                                        <li>
+                                            <strong>Villanos:</strong>
+                                            Algunos de sus villanos notables incluyen a Abominación (Emil Blonsky), quien es su contraparte monstruosa con fuerza similar, y el Líder (Samuel Sterns), un genio intelectual con habilidades psiónicas.
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Regresar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Hawkeye</h2>
+                                <p class="item-intro text-muted">Clint Barton</p>
+                                <video id="clint-video" class="img-fluid d-block mx-auto" controls>
+                                    <source src="Clint.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <br>
+                                <p>Hawkeye, cuyo nombre real es Clint Barton, es un maestro arquero y tirador con una puntería inigualable. A pesar de no tener superpoderes, compensa su falta de habilidades sobrehumanas con una destreza excepcional y un dominio de las artes marciales. Hawkeye es conocido por su personalidad sarcástica y su lealtad a sus compañeros.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Poderes:</strong>
+                                        Hawkeye es un arquero y tirador excepcionalmente hábil. Tiene una puntería y habilidades de tiro extremadamente precisas.
+                                    </li>
+                                    <li>
+                                        <strong>Villanos:</strong>
+                                        Aunque no tiene un conjunto específico de villanos icónicos, ha lidiado con enemigos como Bullseye y Crossfire en los cómics.
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Regresar
+                                </button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Black Widow</h2>
+                                    <p class="item-intro text-muted">Natasha Romanoff</p>
+                                    <video class="img-fluid d-block mx-auto" controls>
+                                        <source src="BlackWidow.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <br>
+                                    <p>Black Widow, Natasha Romanoff, es una espía y asesina altamente capacitada. Originalmente una agente del programa de entrenamiento soviético conocido como "La Habitación Roja", Natasha lucha por redimir su pasado oscuro. Es una experta en artes marciales, combate cuerpo a cuerpo y tácticas de espionaje. Black Widow es valiosa tanto por su habilidad en el combate como por su inteligencia estratégica.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Poderes:</strong>
+                                            Black Widow es una espía altamente capacitada y una experta en artes marciales. También ha sido mejorada físicamente para ser más ágil y resistente.
+                                        </li>
+                                        <li>
+                                            <strong>Villanos:</strong>
+                                            Algunos de sus villanos notables incluyen a Taskmaster, un mercenario con la capacidad de copiar las habilidades de sus oponentes, y al Soldado del Invierno (Bucky Barnes), un ex compañero de lucha que fue manipulado y mejorado cibernéticamente.
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Regresa
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Rocket</h2>
+                                    <p class="item-intro text-muted">Rocket Racoon</p>
+                                    <video class="img-fluid d-block mx-auto" controls>
+                                        <source src="Rocket.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <br>
+                                    <p>Rocket Raccoon es un pequeño mapache genéticamente modificado y experto en armas y tecnología. Es un piloto consumado y un genio ingeniero. Junto con su amigo Groot, Rocket es parte de los Guardianes de la Galaxia. Su actitud audaz y su ingenio a menudo lo meten en situaciones peligrosas, pero siempre encuentra una manera de superar los obstáculos.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Poderes:</strong>
+                                            Rocket es un mapache genéticamente modificado con una gran inteligencia y habilidades técnicas. Es un ingeniero y piloto talentoso.
+                                        </li>
+                                        <li>
+                                            <strong>Villanos:</strong>
+                                            Rocket y los Guardianes de la Galaxia a menudo se enfrentan a enemigos cósmicos, como Ronan el Acusador y la Orden Negra de Thanos.
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Regresar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Ant-Man</h2>
+                                    <p class="item-intro text-muted">Scott Lang</p>
+                                    <video class="img-fluid d-block mx-auto" controls>
+                                        <source src="AntMan.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <br>
+                                    <p>Ant-Man se refiere a dos personajes principales: Hank Pym y Scott Lang. Ambos tienen la capacidad de cambiar de tamaño, desde el tamaño microscópico hasta el gigante, utilizando partículas subatómicas. Hank Pym es el creador de la tecnología y fue el primer Ant-Man, mientras que Scott Lang es un ladrón reformado que asumió el manto. La capacidad de cambiar de tamaño proporciona una ventaja única en combate y resolución de problemas.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Poderes:</strong>
+                                            Ant-Man (Scott Lang y Hank Pym) tiene la capacidad de cambiar de tamaño y comunicarse con las hormigas utilizando la tecnología de partículas Pym.
+                                        </li>
+                                        <li>
+                                            <strong>Villanos:</strong>
+                                            Algunos de sus villanos incluyen a Yellowjacket (una versión malévola de Hank Pym) y Ghost (Ava Starr), una hacker que puede volverse intangible.
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Regresar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Black Panther</h2>
+                                    <p class="item-intro text-muted">T'Challa</p>
+                                    <video class="img-fluid d-block mx-auto" controls>
+                                        <source src="BlackPanther.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <br>
+                                    <p>Black Panther, cuyo nombre real es T'Challa, es el rey de Wakanda, una nación africana ficticia rica en el metal raro llamado vibranium. T'Challa se convierte en Black Panther tras ingerir una hierba en forma de corazón que le otorga fuerza sobrehumana y agilidad. Además de sus habilidades físicas, Black Panther es un estratega excepcional y líder sabio. Utiliza un traje de vibranium altamente avanzado que le proporciona protección y tecnología avanzada.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Poderes:</strong>
+                                            Black Panther posee agilidad sobrehumana, fuerza y sentidos mejorados debido al consumo de una hierba en forma de corazón. Además, utiliza un traje de vibranium altamente avanzado.
+                                        </li>
+                                        <li>
+                                            <strong>Villanos:</strong>
+                                            Su principal enemigo es Erik Killmonger, un adversario con conexiones familiares y habilidades similares. También se ha enfrentado a Ulysses Klaue, un traficante de vibranium.
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Regresar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
